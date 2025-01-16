@@ -23,7 +23,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = verify.TdxQuote(quote, nil)
+	err = verify.TdxQuote(quote, &verify.Options{})
 	if err != nil {
 		panic(err)
 	}
